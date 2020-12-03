@@ -7,7 +7,8 @@ col.beach <- c('#3f3342', '#e5ecd5','#a5b5c4','#576f92','#7f7f96')
 
 col.citynight <- c('#2d1916','#5d3a31', '#bf1713', '#bbb3a7','#FFF48A')
 
-col.auLandscape <- c('#96b7dd','#6f9dd5','#453725','#ac8d4c','#bfc3bc')
+col.auLandscape <- c('#463e1b','#906e47','#abc0df','#a69458','#A9C058')
+# c('#96b7dd','#6f9dd5','#453725','#ac8d4c','#bfc3bc')
 
 col.resprout <- c('#1d1d21','#dcb9ab','#4f4b4e','#bb9b59','#a76a58')
 
@@ -24,7 +25,7 @@ col.reptile <- c('#430248','#ae54c1','#462aba','#cba0f2','#000000')
 #
 col.df <- data.frame(flower = col.flower,
                      beach=col.beach,
-                     citynight = col.citynight,
+                     cityNight = col.citynight,
                      auLandscape=col.auLandscape,
                      resprout = col.resprout,
                      daisy = col.daisy,
