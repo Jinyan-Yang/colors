@@ -1,14 +1,3 @@
-#'Creat color pallette for plotting
-#'
-#'\code{print.all.func} can print all the pallettes for preview
-#''\code{col.df} has all the color
-#''\code{names(col.df)} to check the names of the pallettes
-#''\code{print.pallete.func} can print a choosen pallette for preview
-#'
-#'
-#'@return a data frame of color
-#'@export
-
 #
 col.flower <- c('#5f5856','#dbb232','#906f5a','#988d8d','#000000')
 
@@ -60,3 +49,19 @@ print.all.func <- function(){
 }
 
 # print.all.func()
+disc = c('Description',
+         'This code is a homemade color pallette from picture I have taken over the year.',
+         'Each pallette contains the colors from a picutre of certain landscape/object, which should be obvious from the name of the pallette.',
+         'The current version has 10 pallettes and five colors in each.',
+         'Usage',
+         'print.all.func can print all the pallettes for preview',
+         'col.df has all the color',
+         'use names(col.df) to check the names of the pallettes',
+         'print.pallete.func can print a choosen pallette for preview',
+         'Example',
+         'pallette(col.df$flower)',
+         'print.pallete.func(col.df$flower)')
+cat("\014")
+print(disc)
+
+rm(list=setdiff(ls(), c('print.all.func','print.pallete.func','col.df')))
