@@ -67,7 +67,7 @@ disc = c('Description',
          'print.pallete.func can print a choosen pallette for preview',
          'Example',
          'pallette(col.df$flower)',
-         'print.pallete.func(col.df$flower)',
+         'print.pallete.func("flower")',
          'plot(seq_along(col.df$flower),col=col.df$flower,pch=16,cex=3)')
 
 cat("\014")
