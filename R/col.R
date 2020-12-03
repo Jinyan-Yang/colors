@@ -3,7 +3,7 @@ pre.ls <- ls()
 #
 col.flower <- c('#5f5856','#dbb232','#906f5a','#988d8d','#000000')
 
-col.beach <- c('#3f3342', '#e5ecd5','#a5b5c4','#576f92', '#7f7f96')
+col.beach <- c('#3f3342', '#e5ecd5','#a5b5c4','#576f92','#7f7f96')
 
 col.citynight <- c('#2d1916','#5d3a31', '#bf1713', '#bbb3a7','#FFF48A')
 
@@ -33,6 +33,8 @@ col.df <- data.frame(flower = col.flower,
                      bushBySea = col.bushBySea,
                      reptile = col.reptile)
 
+col.df[] <- lapply(col.df, as.character)
+
 # print.pallete.func(pallet.nm='beach')
 #
 print.pallete.func <- function(pallet.nm){
@@ -46,6 +48,7 @@ print.pallete.func <- function(pallet.nm){
 
 #
 print.all.func <- function(){
+  x11(width = 8, height=8*.618)
   par(mfrow=c(2,5))
   sapply(names(col.df),print.pallete.func)
 }
@@ -62,7 +65,8 @@ disc = c('Description',
          'print.pallete.func can print a choosen pallette for preview',
          'Example',
          'pallette(col.df$flower)',
-         'print.pallete.func(col.df$flower)')
+         'print.pallete.func(col.df$flower)',
+         'plot(seq_along(col.df$flower),col=col.df$flower,pch=16,cex=3)')
 
 cat("\014")
 print(disc)
