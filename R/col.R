@@ -35,9 +35,9 @@ col.df <- data.frame(flower = col.flower,
 
 col.df[] <- lapply(col.df, as.character)
 
-# print.pallete.func(pallet.nm='beach')
+# print.palette.func(pallet.nm='beach')
 #
-print.pallete.func <- function(pallet.nm){
+print.palette.func <- function(pallet.nm){
 
   col.vec <- as.character(col.df[,c(paste0(pallet.nm))])
 
@@ -51,26 +51,26 @@ print.all.func <- function(){
 
   x11(width = 8, height=8*.618)
   par(mfrow=c(2,5))
-  sapply(names(col.df),print.pallete.func)
+  sapply(names(col.df),print.palette.func)
 
 }
 
 # print.all.func()
 disc = c('Description',
-         'This code is a homemade color pallette from picture I have taken over the year.',
-         'Each pallette contains the colors from a picutre of certain landscape/object, which should be obvious from the name of the pallette.',
-         'The current version has 10 pallettes and five colors in each.',
+         'This code is a homemade color palette from picture I have taken over the year.',
+         'Each palette contains the colors from a picutre of certain landscape/object, which should be obvious from the name of the palette.',
+         'The current version has 10 palettes and five colors in each.',
          'Usage',
-         'print.all.func can print all the pallettes for preview',
+         'print.all.func can print all the palettes for preview',
          'col.df has all the color',
          'use names(col.df) to check the names of the pallettes',
-         'print.pallete.func can print a choosen pallette for preview',
+         'print.palette.func can print a choosen pallette for preview',
          'Example',
-         'pallette(col.df$flower)',
-         'print.pallete.func("flower")',
+         'palette(col.df$flower)',
+         'print.palette.func("flower")',
          'plot(seq_along(col.df$flower),col=col.df$flower,pch=16,cex=3)')
 
 cat("\014")
 print(disc)
 
-rm(list=setdiff(ls(), c(pre.ls,'print.all.func','print.pallete.func','col.df')))
+rm(list=setdiff(ls(), c(pre.ls,'print.all.func','print.palette.func','col.df')))
