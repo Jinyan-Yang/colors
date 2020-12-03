@@ -1,3 +1,5 @@
+pre.ls <- ls()
+
 #
 col.flower <- c('#5f5856','#dbb232','#906f5a','#988d8d','#000000')
 
@@ -61,7 +63,8 @@ disc = c('Description',
          'Example',
          'pallette(col.df$flower)',
          'print.pallete.func(col.df$flower)')
+
 cat("\014")
 print(disc)
 
-rm(list=setdiff(ls(), c('print.all.func','print.pallete.func','col.df')))
+rm(list=setdiff(ls(), c(pre.ls,'print.all.func','print.pallete.func','col.df')))
