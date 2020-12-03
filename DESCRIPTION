@@ -1,9 +1,0 @@
-Package: colors
-Type: Package
-Title: color pallette
-Version: 1.0
-Author: Jinyan Yang
-Maintainer: The package maintainer <jyyoung@live.com>
-Description: This package is a homemade color pallette from picture I have tken over the year. Each pallette contains the colors from a picutre of certain landscape/object, which should be obvious from the name of the pallette. The current version has 10 pallettes and five colors in each.
-Encoding: UTF-8
-LazyData: true
